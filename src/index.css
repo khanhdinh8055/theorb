@@ -1,13 +1,125 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* FONT INSTALL */
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,600,900&display=swap');
+@font-face {
+  font-family: 'kong_questregular';
+  src: url('font/kongquest-regular.woff2') format('woff2'),
+       url('font/kongquest-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family:'Montserrat Alternates', sans-serif;
+  font-size: 16px;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+p {
+  line-height: 2em;
+}
+
+.header-light {
+  font-family: 'kong_questregular';
+  color: #420CC6;
+  font-size: 3em;
+}
+
+/* ---------- START OF INTRO PAGE STYLE ---------- */
+button {
+  padding: 10px 30px;
+  background: #E7C05A;
+  border-radius: 100px;
+  outline: none;
+  border: none;
+  font-family:'Montserrat Alternates', sans-serif; 
+  color: #230E56;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all .5s;
+  -webkit-box-shadow: 0px 10px 15px -12px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 10px 15px -12px rgba(0,0,0,1);
+  box-shadow: 0px 10px 15px -12px rgba(0,0,0,1);
+}
+button:hover {
+  background: rgba(231,192,90,.8);
+  transition: all .5s;
+  -webkit-box-shadow: 0px 0px 15px -15px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 15px -15px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 15px -15px rgba(0,0,0,0.75);
+}
+
+#intro-page {
+  background-image: radial-gradient(ellipse at top left, #420CC6, #230E56);
+  min-height: 100vh;
+  text-align: center;
+  color: #FFFFFF;
+  display: grid;
+  align-items: end;
+}
+
+#intro-page div, p , button {
+  margin: 20px 0;
+}
+
+#intro-age .continute-line{
+  margin-bottom: -10p;
+}
+
+#intro-page #kd-logo {
+  margin-top: 5%;
+}
+
+#intro-page #kd-logo img {
+  width: 100px;
+  height: auto;
+}
+
+#intro-page #connect-line {
+  margin: 0;
+  margin-bottom: -10px;
+}
+#intro-page #connect-line img {
+  height: 150px;
+  width: auto;
+}
+/* ---------- END OF INTRO PAGE STYLE ---------- */
+
+
+/* ---------- START OF STORY PAGE STYLE ---------- */
+#story-page{
+  min-height: 100vh;
+  text-align: center;
+
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+#story-page #story-wrap {
+  max-width: 50vw;
+}
+
+#story-page {
+  background-image: url("./media/story-img.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+/* #story-page #story-image img{
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+} */
+/* ---------- END OF STORY PAGE STYLE ---------- */
